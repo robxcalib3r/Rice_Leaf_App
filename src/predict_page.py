@@ -37,7 +37,7 @@ class predict_page():
 
         # if bDefaultModel:
         try:
-            self.model = tf.keras.models.load_model('rice_leaf_model.keras')
+            self.model = tf.keras.models.load_model('model/rice_leaf_model.keras')
         except Exception as e:
             st.write(f""" ##### Model Not found! \n debug: {e}""")
         
@@ -50,7 +50,7 @@ class predict_page():
         #         st.write(f"Some error occurred! debug: {e}")
         
         
-        st.write("""#### Upload picture or take a picture""")
+        st.write("""#### Upload picture""")
         
         
         # picture = st.camera_input("Take a picture of infected Rice leaf")
